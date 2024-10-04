@@ -1,0 +1,58 @@
+{
+  "LUMSUM_EXISTING_FOLIO": {
+    "success": false,
+    "response": {
+      "message": "Logs were not verified successfully",
+      "report": {
+        "validateApiSequence": {},
+        "select": {
+          "fulfillments[0].stops": "fulfillment[0].stops should be present in fulfillment0 at /select"
+        },
+        "on_select": {
+          "items[0].fulfillment_ids": "items[0].fulfillment_ids is missing in /on_select",
+          "fulfillments[0].stops": "fulfillment[0].stops should be present in fulfillment0 at /on_select"
+        },
+        "init": {
+          "country": "Country code mismatch in /on_select and /init",
+          "fulfillments[0].stops": "fulfillment[0].stops should be present in fulfillment0 at /on_select",
+          "payments[0].params.source_bank_account_name": "payments[0].params.source_bank_account_name is missing in /init"
+        },
+        "on_init": {
+          "schemaErr0": "/message/order/status must be equal to one of the allowed values (ACTIVE,COMPLETE,CANCELLED)",
+          "prvdrId": "provider.id for /on_init & past call api should be same",
+          "fulfillments[0].stops": "fulfillment[0].stops should be present in fulfillment0 at /on_select",
+          "payments[0].params.source_bank_account_name": "payments[0].params.source_bank_account_name is missing in /on_init"
+        },
+        "confirm": {
+          "descriptor": "descriptor is missing at provider.descriptor.",
+          "fulfillments[0].stops": "fulfillment[0].stops should be present in fulfillment0 at /on_select",
+          "payments[0].params.source_bank_account_name": "payments[0].params.source_bank_account_name is missing in /confirm"
+        },
+        "on_confirm": {
+          "schemaErr0": "/message/order/status must be equal to one of the allowed values (ACTIVE,COMPLETE,CANCELLED)"
+        },
+        "on_status": {
+          "schemaErr0": "/message/order/status must be equal to one of the allowed values (ACTIVE,COMPLETE,CANCELLED)",
+          "schemaErr1": "/message/order/fulfillments/0/agent/organization must NOT have additional properties (creds)",
+          "fulfillments[0].stops": "fulfillment[0].stops should be present in fulfillment0 at /on_select",
+          "payments[0].params.source_bank_account_name": "payments[0].params.source_bank_account_name is missing in /on_status"
+        },
+        "on_update": {
+          "schemaErr0": "/message/order/status must be equal to one of the allowed values (ACTIVE,COMPLETE,CANCELLED)",
+          "schemaErr1": "/message/order/fulfillments/0/agent/organization must NOT have additional properties (creds)",
+          "fulfillments[0].contact.phone": "contact.phone should be present with valid value in fulfillment0 at /on_update",
+          "fulfillments[0].stops.time.schedule.frequency": "fulfillment[0].stops.time.schedule.frequency should be present in fulfillment0 at /on_update",
+          "quotes.breakup.price": "quotes.breakup.price is missing in message.order",
+          "quotes.breakup.title": "quotes.breakup.title is missing in message.order",
+          "ref_order_ids": "ref_order_ids is missing in message.order"
+        }
+      },
+      "bpp_id": "SELLER_APP_SUBSCRIBER_ID",
+      "bap_id": "BUYER_APP_SUBSCRIBER_ID",
+      "domain": "ONDC:FIS14",
+      "reportTimestamp": "2024-10-04T05:29:22.787Z"
+    },
+    "signature": "6ZPGRh5iYCLnZKe5MKJFi+p5LGsJ5dLyqV50zbjN/llKZBIDsfQLoiXIn1Thb3q2m/XcJ/gkHyFBVpnClOkZCQ==",
+    "signTimestamp": "2024-10-04T05:29:22.787Z"
+  }
+}

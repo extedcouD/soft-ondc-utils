@@ -1,0 +1,8 @@
+{
+  "domain": "ONDC:FIS14",
+  "version": "2.0.0",
+  "flow": "REDEMPTION",
+  "bap_id": "BUYER_APP_SUBSCRIBER_ID",
+  "bpp_id": "SELLER_APP_SUBSCRIBER_ID",
+  "payload": {}
+}
