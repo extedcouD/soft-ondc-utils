@@ -44,7 +44,7 @@ async function processShellScripts(directoryPath, outputFilePath) {
 
 // Example usage:
 const folderPath =
-  "/Users/rudranshsinghal/ondc/utils/extr-folder-remover/payload"; // Specify your folder containing .sh files
+  "/Users/rudranshsinghal/ondc/utils/soft-ondc-utils/extr-folder-remover/payload"; // Specify your folder containing .sh files
 const outputFilePath = "./responses.json"; // File to store the responses
 
 processShellScripts(folderPath, outputFilePath);
